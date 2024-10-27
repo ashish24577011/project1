@@ -7,8 +7,8 @@ rule all:
 
 rule filter_bed_by_chromosome:
     input:
-        file_a="/home/ashish-gautam/workplace/project1/data/shuf.a.bed",
-        file_b="/home/ashish-gautam/workplace/project1/data/shuf.b.bed",
+        file_a="data/shuf.a.bed",
+        file_b="data/shuf.b.bed",
         chrom_order=selection_file
     output:
         "file_filtered.bed"  
